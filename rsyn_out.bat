@@ -1,0 +1,1 @@
+wsl rsync -avtuz -e "ssh -p 33301" ./ rathnayake@localhost:~/Run_files
