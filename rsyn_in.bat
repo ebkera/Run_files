@@ -1,1 +1,1 @@
-wsl rsync -avtuz -e "ssh -p 33301" rathnayake@localhost:~/Run_files/ ./
+wsl rsync -avtuz -e --min-size=5m "ssh -p 33301" rathnayake@localhost:~/Run_files/ ./
