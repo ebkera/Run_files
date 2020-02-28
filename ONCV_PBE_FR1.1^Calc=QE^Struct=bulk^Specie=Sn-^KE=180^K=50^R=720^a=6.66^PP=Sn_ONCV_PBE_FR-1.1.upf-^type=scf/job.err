@@ -1,0 +1,14 @@
+Currently Loaded Modulefiles:
+ 1) intel/18/18.0.3(default)                            
+ 2) openmpi/1.10/intel-17/1.10.7-2(default)             
+ 3) quantum-espresso/5.4/openmpi-1.10/intel-16/5.4.0-1  
+########################################################################################################################
+# FROM IOTK LIBRARY, VERSION 1.2.0
+# UNRECOVERABLE ERROR (ierr=1)
+# ERROR IN: iotk_write_tag (iotk_write.f90:501)
+# CVS Revision: 1.23 
+# error writing
+iostat=38
+# ERROR IN: iotk_write_empty (iotk_write.f90:393)
+# CVS Revision: 1.23 
+########################################################################################################################

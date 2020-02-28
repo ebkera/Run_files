@@ -1,0 +1,24 @@
+
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     task #         9
+     from davcio : error #        10
+     error while writing from file "/home/rathnayake/Run_files/ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=200^K=45^R=800^a=6.66^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf/./Sn.wfc6"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     task #         2
+     from davcio : error #        10
+     error while writing from file "/home/rathnayake/Run_files/ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=200^K=45^R=800^a=6.66^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf/./Sn.wfc3"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     task #        12
+     from davcio : error #        10
+     error while writing from file "/home/rathnayake/Run_files/ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=200^K=45^R=800^a=6.66^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf/./Sn.wfc13"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
