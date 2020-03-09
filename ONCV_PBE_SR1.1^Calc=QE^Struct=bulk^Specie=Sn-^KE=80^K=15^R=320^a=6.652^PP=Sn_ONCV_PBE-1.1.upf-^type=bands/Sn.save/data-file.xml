@@ -1,0 +1,2191 @@
+<?xml version="1.0"?>
+<?iotk version="1.2.0"?>
+<?iotk file_version="1.0"?>
+<?iotk binary="F"?>
+<?iotk qe_syntax="F"?>
+<Root>
+  <HEADER>
+    <FORMAT NAME="QEXML" VERSION="1.4.0"/>
+    <CREATOR NAME="PWSCF" VERSION="5.4.0"/>
+  </HEADER>
+  <CONTROL>
+    <PP_CHECK_FLAG type="logical" size="1">
+T
+    </PP_CHECK_FLAG>
+    <LKPOINT_DIR type="logical" size="1">
+F
+    </LKPOINT_DIR>
+    <Q_REAL_SPACE type="logical" size="1">
+F
+    </Q_REAL_SPACE>
+    <BETA_REAL_SPACE type="logical" size="1">
+F
+    </BETA_REAL_SPACE>
+  </CONTROL>
+  <CELL>
+    <NON-PERIODIC_CELL_CORRECTION type="character" size="1" len="4">
+None
+    </NON-PERIODIC_CELL_CORRECTION>
+    <BRAVAIS_LATTICE type="character" size="1" len="4">
+free
+    </BRAVAIS_LATTICE>
+    <LATTICE_PARAMETER type="real" size="1" UNITS="Bohr">
+ 8.888656261266277E+000
+    </LATTICE_PARAMETER>
+    <CELL_DIMENSIONS type="real" size="6">
+ 8.888656261266277E+000
+ 0.000000000000000E+000
+ 0.000000000000000E+000
+ 0.000000000000000E+000
+ 0.000000000000000E+000
+ 0.000000000000000E+000
+    </CELL_DIMENSIONS>
+    <DIRECT_LATTICE_VECTORS>
+      <UNITS_FOR_DIRECT_LATTICE_VECTORS UNITS="Bohr"/>
+      <a1 type="real" size="3" columns="3">
+ 0.000000000000000E+000  6.285229117977649E+000  6.285229117977649E+000
+      </a1>
+      <a2 type="real" size="3" columns="3">
+ 6.285229117977649E+000  0.000000000000000E+000  6.285229117977649E+000
+      </a2>
+      <a3 type="real" size="3" columns="3">
+ 6.285229117977649E+000  6.285229117977649E+000  0.000000000000000E+000
+      </a3>
+    </DIRECT_LATTICE_VECTORS>
+    <RECIPROCAL_LATTICE_VECTORS>
+      <UNITS_FOR_RECIPROCAL_LATTICE_VECTORS UNITS="2 pi / a"/>
+      <b1 type="real" size="3" columns="3">
+-7.071067811865476E-001  7.071067811865476E-001  7.071067811865476E-001
+      </b1>
+      <b2 type="real" size="3" columns="3">
+ 7.071067811865476E-001 -7.071067811865476E-001  7.071067811865476E-001
+      </b2>
+      <b3 type="real" size="3" columns="3">
+ 7.071067811865476E-001  7.071067811865476E-001 -7.071067811865476E-001
+      </b3>
+    </RECIPROCAL_LATTICE_VECTORS>
+  </CELL>
+  <IONS>
+    <NUMBER_OF_ATOMS type="integer" size="1">
+         2
+    </NUMBER_OF_ATOMS>
+    <NUMBER_OF_SPECIES type="integer" size="1">
+         1
+    </NUMBER_OF_SPECIES>
+    <UNITS_FOR_ATOMIC_MASSES UNITS="a.m.u."/>
+    <SPECIE.1>
+      <ATOM_TYPE type="character" size="1" len="3">
+Sn 
+      </ATOM_TYPE>
+      <MASS type="real" size="1">
+ 1.187100000000000E+002
+      </MASS>
+      <PSEUDO type="character" size="1" len="19">
+Sn_ONCV_PBE-1.1.upf
+      </PSEUDO>
+    </SPECIE.1>
+    <PSEUDO_DIR type="character" size="1" len="27">
+../PseudopotentialDatabase/
+    </PSEUDO_DIR>
+    <UNITS_FOR_ATOMIC_POSITIONS UNITS="Bohr"/>
+    <ATOM.1 SPECIES="Sn " INDEX="1" tau="0.000000000000000E+000 0.000000000000000E+000 0.000000000000000E+000" if_pos="1 1 1"/>
+    <ATOM.2 SPECIES="Sn " INDEX="1" tau="3.142614558988825E+000 3.142614558988825E+000 3.142614558988825E+000" if_pos="1 1 1"/>
+  </IONS>
+  <SYMMETRIES>
+    <NUMBER_OF_SYMMETRIES type="integer" size="1">
+        24
+    </NUMBER_OF_SYMMETRIES>
+    <NUMBER_OF_BRAVAIS_SYMMETRIES type="integer" size="1">
+        48
+    </NUMBER_OF_BRAVAIS_SYMMETRIES>
+    <INVERSION_SYMMETRY type="logical" size="1">
+F
+    </INVERSION_SYMMETRY>
+    <DO_NOT_USE_TIME_REVERSAL type="logical" size="1">
+F
+    </DO_NOT_USE_TIME_REVERSAL>
+    <TIME_REVERSAL_FLAG type="logical" size="1">
+T
+    </TIME_REVERSAL_FLAG>
+    <NO_TIME_REV_OPERATIONS type="logical" size="1">
+F
+    </NO_TIME_REV_OPERATIONS>
+    <NUMBER_OF_ATOMS type="integer" size="1">
+         2
+    </NUMBER_OF_ATOMS>
+    <UNITS_FOR_SYMMETRIES UNITS="Crystal"/>
+    <SYMM.1>
+      <INFO NAME="identity" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          0          0 
+         0          1          0 
+         0          0          1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.1>
+    <SYMM.2>
+      <INFO NAME="180 deg rotation - cart. axis [0,0,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          1          0 
+         1          0          0 
+        -1         -1         -1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.2>
+    <SYMM.3>
+      <INFO NAME="180 deg rotation - cart. axis [0,1,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0          1 
+        -1         -1         -1 
+         1          0          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.3>
+    <SYMM.4>
+      <INFO NAME="180 deg rotation - cart. axis [1,0,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1         -1         -1 
+         0          0          1 
+         0          1          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.4>
+    <SYMM.5>
+      <INFO NAME="120 deg rotation - cart. axis [-1,-1,-1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          1          0 
+         0          0          1 
+         1          0          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.5>
+    <SYMM.6>
+      <INFO NAME="120 deg rotation - cart. axis [-1,1,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          0          0 
+        -1         -1         -1 
+         0          1          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.6>
+    <SYMM.7>
+      <INFO NAME="120 deg rotation - cart. axis [1,1,-1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1         -1         -1 
+         1          0          0 
+         0          0          1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.7>
+    <SYMM.8>
+      <INFO NAME="120 deg rotation - cart. axis [1,-1,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0          1 
+         0          1          0 
+        -1         -1         -1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.8>
+    <SYMM.9>
+      <INFO NAME="120 deg rotation - cart. axis [1,1,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0          1 
+         1          0          0 
+         0          1          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.9>
+    <SYMM.10>
+      <INFO NAME="120 deg rotation - cart. axis [-1,1,-1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1         -1         -1 
+         0          1          0 
+         1          0          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.10>
+    <SYMM.11>
+      <INFO NAME="120 deg rotation - cart. axis [1,-1,-1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          0          0 
+         0          0          1 
+        -1         -1         -1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.11>
+    <SYMM.12>
+      <INFO NAME="120 deg rotation - cart. axis [-1,-1,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          1          0 
+        -1         -1         -1 
+         0          0          1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.12>
+    <SYMM.13>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [1,1,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          0          0 
+         0          1          0 
+        -1         -1         -1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.13>
+    <SYMM.14>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [1,-1,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          1          0 
+         1          0          0 
+         0          0          1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.14>
+    <SYMM.15>
+      <INFO NAME="inv.  90 deg rotation - cart. axis [0,0,-1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0          1 
+        -1         -1         -1 
+         0          1          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.15>
+    <SYMM.16>
+      <INFO NAME="inv.  90 deg rotation - cart. axis [0,0,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1         -1         -1 
+         0          0          1 
+         1          0          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.16>
+    <SYMM.17>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [1,0,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          0          0 
+        -1         -1         -1 
+         0          0          1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.17>
+    <SYMM.18>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [-1,0,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0          1 
+         0          1          0 
+         1          0          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.18>
+    <SYMM.19>
+      <INFO NAME="inv.  90 deg rotation - cart. axis [0,1,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          1          0 
+         0          0          1 
+        -1         -1         -1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.19>
+    <SYMM.20>
+      <INFO NAME="inv.  90 deg rotation - cart. axis [0,-1,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1         -1         -1 
+         1          0          0 
+         0          1          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.20>
+    <SYMM.21>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [0,1,1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1         -1         -1 
+         0          1          0 
+         0          0          1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.21>
+    <SYMM.22>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [0,1,-1]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          0          0 
+         0          0          1 
+         0          1          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.22>
+    <SYMM.23>
+      <INFO NAME="inv.  90 deg rotation - cart. axis [-1,0,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0          1 
+         1          0          0 
+        -1         -1         -1
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.23>
+    <SYMM.24>
+      <INFO NAME="inv.  90 deg rotation - cart. axis [1,0,0]" T_REV="0"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          1          0 
+        -1         -1         -1 
+         1          0          0
+      </ROTATION>
+      <FRACTIONAL_TRANSLATION type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </FRACTIONAL_TRANSLATION>
+      <EQUIVALENT_IONS type="integer" size="2" columns="8">
+         1          2
+      </EQUIVALENT_IONS>
+    </SYMM.24>
+    <SYMM.25>
+      <INFO NAME="inversion"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1          0          0 
+         0         -1          0 
+         0          0         -1
+      </ROTATION>
+    </SYMM.25>
+    <SYMM.26>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [0,0,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0         -1          0 
+        -1          0          0 
+         1          1          1
+      </ROTATION>
+    </SYMM.26>
+    <SYMM.27>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [0,1,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0         -1 
+         1          1          1 
+        -1          0          0
+      </ROTATION>
+    </SYMM.27>
+    <SYMM.28>
+      <INFO NAME="inv. 180 deg rotation - cart. axis [1,0,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          1          1 
+         0          0         -1 
+         0         -1          0
+      </ROTATION>
+    </SYMM.28>
+    <SYMM.29>
+      <INFO NAME="180 deg rotation - cart. axis [0,1,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          1          1 
+         0         -1          0 
+         0          0         -1
+      </ROTATION>
+    </SYMM.29>
+    <SYMM.30>
+      <INFO NAME="180 deg rotation - cart. axis [0,1,-1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1          0          0 
+         0          0         -1 
+         0         -1          0
+      </ROTATION>
+    </SYMM.30>
+    <SYMM.31>
+      <INFO NAME=" 90 deg rotation - cart. axis [-1,0,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0         -1 
+        -1          0          0 
+         1          1          1
+      </ROTATION>
+    </SYMM.31>
+    <SYMM.32>
+      <INFO NAME=" 90 deg rotation - cart. axis [1,0,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0         -1          0 
+         1          1          1 
+        -1          0          0
+      </ROTATION>
+    </SYMM.32>
+    <SYMM.33>
+      <INFO NAME="180 deg rotation - cart. axis [1,1,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1          0          0 
+         0         -1          0 
+         1          1          1
+      </ROTATION>
+    </SYMM.33>
+    <SYMM.34>
+      <INFO NAME="180 deg rotation - cart. axis [1,-1,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0         -1          0 
+        -1          0          0 
+         0          0         -1
+      </ROTATION>
+    </SYMM.34>
+    <SYMM.35>
+      <INFO NAME=" 90 deg rotation - cart. axis [0,0,-1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0         -1 
+         1          1          1 
+         0         -1          0
+      </ROTATION>
+    </SYMM.35>
+    <SYMM.36>
+      <INFO NAME=" 90 deg rotation - cart. axis [0,0,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          1          1 
+         0          0         -1 
+        -1          0          0
+      </ROTATION>
+    </SYMM.36>
+    <SYMM.37>
+      <INFO NAME="180 deg rotation - cart. axis [1,0,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1          0          0 
+         1          1          1 
+         0          0         -1
+      </ROTATION>
+    </SYMM.37>
+    <SYMM.38>
+      <INFO NAME="180 deg rotation - cart. axis [-1,0,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0         -1 
+         0         -1          0 
+        -1          0          0
+      </ROTATION>
+    </SYMM.38>
+    <SYMM.39>
+      <INFO NAME=" 90 deg rotation - cart. axis [0,1,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0         -1          0 
+         0          0         -1 
+         1          1          1
+      </ROTATION>
+    </SYMM.39>
+    <SYMM.40>
+      <INFO NAME=" 90 deg rotation - cart. axis [0,-1,0]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          1          1 
+        -1          0          0 
+         0         -1          0
+      </ROTATION>
+    </SYMM.40>
+    <SYMM.41>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [-1,-1,-1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0         -1          0 
+         0          0         -1 
+        -1          0          0
+      </ROTATION>
+    </SYMM.41>
+    <SYMM.42>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [-1,1,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1          0          0 
+         1          1          1 
+         0         -1          0
+      </ROTATION>
+    </SYMM.42>
+    <SYMM.43>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [1,1,-1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          1          1 
+        -1          0          0 
+         0          0         -1
+      </ROTATION>
+    </SYMM.43>
+    <SYMM.44>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [1,-1,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0         -1 
+         0         -1          0 
+         1          1          1
+      </ROTATION>
+    </SYMM.44>
+    <SYMM.45>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [1,1,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0          0         -1 
+        -1          0          0 
+         0         -1          0
+      </ROTATION>
+    </SYMM.45>
+    <SYMM.46>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [-1,1,-1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         1          1          1 
+         0         -1          0 
+        -1          0          0
+      </ROTATION>
+    </SYMM.46>
+    <SYMM.47>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [1,-1,-1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+        -1          0          0 
+         0          0         -1 
+         1          1          1
+      </ROTATION>
+    </SYMM.47>
+    <SYMM.48>
+      <INFO NAME="inv. 120 deg rotation - cart. axis [-1,-1,1]"/>
+      <ROTATION type="integer" size="9" columns="3">
+         0         -1          0 
+         1          1          1 
+         0          0         -1
+      </ROTATION>
+    </SYMM.48>
+  </SYMMETRIES>
+  <ELECTRIC_FIELD>
+    <HAS_ELECTRIC_FIELD type="logical" size="1">
+F
+    </HAS_ELECTRIC_FIELD>
+    <HAS_DIPOLE_CORRECTION type="logical" size="1">
+F
+    </HAS_DIPOLE_CORRECTION>
+    <FIELD_DIRECTION type="integer" size="1">
+         1
+    </FIELD_DIRECTION>
+    <MAXIMUM_POSITION type="real" size="1">
+ 5.000000000000000E-001
+    </MAXIMUM_POSITION>
+    <INVERSE_REGION type="real" size="1">
+ 1.000000000000000E-001
+    </INVERSE_REGION>
+    <FIELD_AMPLITUDE type="real" size="1">
+ 0.000000000000000E+000
+    </FIELD_AMPLITUDE>
+  </ELECTRIC_FIELD>
+  <PLANE_WAVES>
+    <UNITS_FOR_CUTOFF UNITS="Hartree"/>
+    <WFC_CUTOFF type="real" size="1">
+ 4.000000000000000E+001
+    </WFC_CUTOFF>
+    <RHO_CUTOFF type="real" size="1">
+ 1.600000000000000E+002
+    </RHO_CUTOFF>
+    <MAX_NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6026
+    </MAX_NUMBER_OF_GK-VECTORS>
+    <GAMMA_ONLY type="logical" size="1">
+F
+    </GAMMA_ONLY>
+    <FFT_GRID nr1="54" nr2="54" nr3="54"/>
+    <GVECT_NUMBER type="integer" size="1">
+     47855
+    </GVECT_NUMBER>
+    <SMOOTH_FFT_GRID nr1s="54" nr2s="54" nr3s="54"/>
+    <SMOOTH_GVECT_NUMBER type="integer" size="1">
+     47855
+    </SMOOTH_GVECT_NUMBER>
+    <SMALLBOX_FFT_GRID nr1b="54" nr2b="54" nr3b="54"/>
+  </PLANE_WAVES>
+  <SPIN>
+    <LSDA type="logical" size="1">
+F
+    </LSDA>
+    <NON-COLINEAR_CALCULATION type="logical" size="1">
+F
+    </NON-COLINEAR_CALCULATION>
+    <SPIN-ORBIT_CALCULATION type="logical" size="1">
+F
+    </SPIN-ORBIT_CALCULATION>
+    <SPIN-ORBIT_DOMAG type="logical" size="1">
+F
+    </SPIN-ORBIT_DOMAG>
+  </SPIN>
+  <MAGNETIZATION_INIT>
+    <CONSTRAINT_MAG type="integer" size="1">
+         0
+    </CONSTRAINT_MAG>
+    <NUMBER_OF_SPECIES type="integer" size="1">
+         1
+    </NUMBER_OF_SPECIES>
+    <SPECIE.1>
+      <STARTING_MAGNETIZATION type="real" size="1">
+ 0.000000000000000E+000
+      </STARTING_MAGNETIZATION>
+      <ANGLE1 type="real" size="1">
+ 0.000000000000000E+000
+      </ANGLE1>
+      <ANGLE2 type="real" size="1">
+ 0.000000000000000E+000
+      </ANGLE2>
+    </SPECIE.1>
+    <TWO_FERMI_ENERGIES type="logical" size="1">
+F
+    </TWO_FERMI_ENERGIES>
+  </MAGNETIZATION_INIT>
+  <EXCHANGE_CORRELATION>
+    <DFT type="character" size="1" len="20">
+PBE                 
+    </DFT>
+    <ACFDT_IN_PW type="logical" size="1">
+F
+    </ACFDT_IN_PW>
+  </EXCHANGE_CORRELATION>
+  <ESM>
+    <esm_nfit type="integer" size="1">
+         4
+    </esm_nfit>
+    <esm_efield type="real" size="1">
+ 0.000000000000000E+000
+    </esm_efield>
+    <esm_w type="real" size="1">
+ 0.000000000000000E+000
+    </esm_w>
+    <esm_a type="real" size="1">
+ 0.000000000000000E+000
+    </esm_a>
+    <esm_bc type="character" size="1" len="3">
+pbc
+    </esm_bc>
+  </ESM>
+  <OCCUPATIONS>
+    <SMEARING_METHOD type="logical" size="1">
+T
+    </SMEARING_METHOD>
+    <SMEARING_TYPE type="integer" size="1">
+         0
+    </SMEARING_TYPE>
+    <SMEARING_PARAMETER type="real" size="1" UNITS="Hartree">
+ 5.000000000000000E-005
+    </SMEARING_PARAMETER>
+    <TETRAHEDRON_METHOD type="logical" size="1">
+F
+    </TETRAHEDRON_METHOD>
+    <FIXED_OCCUPATIONS type="logical" size="1">
+F
+    </FIXED_OCCUPATIONS>
+  </OCCUPATIONS>
+  <BRILLOUIN_ZONE>
+    <NUMBER_OF_K-POINTS type="integer" size="1">
+        90
+    </NUMBER_OF_K-POINTS>
+    <UNITS_FOR_K-POINTS UNITS="2 pi / a"/>
+    <MONKHORST_PACK_GRID nk1="0" nk2="0" nk3="0"/>
+    <MONKHORST_PACK_OFFSET k1="0" k2="0" k3="0"/>
+    <K-POINT.1 XYZ="0.000000000000000E+000 0.000000000000000E+000 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.2 XYZ="0.000000000000000E+000 3.928371006592245E-002 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.3 XYZ="0.000000000000000E+000 7.856742013184491E-002 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.4 XYZ="0.000000000000000E+000 1.178511301977532E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.5 XYZ="0.000000000000000E+000 1.571348402636757E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.6 XYZ="0.000000000000000E+000 1.964185503295981E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.7 XYZ="0.000000000000000E+000 2.357022603955206E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.8 XYZ="0.000000000000000E+000 2.749859704614289E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.9 XYZ="0.000000000000000E+000 3.142696805273513E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.10 XYZ="0.000000000000000E+000 3.535533905932738E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.11 XYZ="0.000000000000000E+000 3.928371006591962E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.12 XYZ="0.000000000000000E+000 4.321208107251187E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.13 XYZ="0.000000000000000E+000 4.714045207910270E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.14 XYZ="0.000000000000000E+000 5.106882308569495E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.15 XYZ="0.000000000000000E+000 5.499719409228719E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.16 XYZ="0.000000000000000E+000 5.892556509887944E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.17 XYZ="0.000000000000000E+000 6.285393610547026E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.18 XYZ="0.000000000000000E+000 6.678230711206251E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.19 XYZ="0.000000000000000E+000 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.20 XYZ="3.928371006592246E-002 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.21 XYZ="7.856742013184492E-002 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.22 XYZ="1.178511301977532E-001 7.071067811865477E-001 -5.551115123125783E-017" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.23 XYZ="1.571348402636757E-001 7.071067811865477E-001 -5.551115123125783E-017" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.24 XYZ="1.964185503295981E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.25 XYZ="2.357022603955206E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.26 XYZ="2.749859704614288E-001 7.071067811865476E-001 5.551115123125783E-017" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.27 XYZ="3.142696805273514E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.28 XYZ="3.535533905932738E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.29 XYZ="3.535533905932738E-001 6.799103665255255E-001 2.719641466102207E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.30 XYZ="3.535533905932737E-001 6.527139518645033E-001 5.439282932204426E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.31 XYZ="3.535533905932737E-001 6.255175372034811E-001 8.158924398306644E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.32 XYZ="3.535533905932738E-001 5.983211225424589E-001 1.087856586440886E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.33 XYZ="3.535533905932737E-001 5.711247078814369E-001 1.359820733051108E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.34 XYZ="3.535533905932738E-001 5.439282932204147E-001 1.631784879661329E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.35 XYZ="3.535533905932738E-001 5.167318785594066E-001 1.903749026271409E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.36 XYZ="3.535533905932738E-001 4.895354638983845E-001 2.175713172881630E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.37 XYZ="3.535533905932738E-001 4.623390492373623E-001 2.447677319491853E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.38 XYZ="3.535533905932738E-001 4.351426345763403E-001 2.719641466102072E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.39 XYZ="3.535533905932738E-001 4.079462199153180E-001 2.991605612712296E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.40 XYZ="3.535533905932738E-001 3.807498052542960E-001 3.263569759322516E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.41 XYZ="3.535533905932738E-001 3.535533905932738E-001 3.535533905932738E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.42 XYZ="3.314563036811942E-001 3.314563036811942E-001 3.314563036811942E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.43 XYZ="3.093592167691145E-001 3.093592167691145E-001 3.093592167691145E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.44 XYZ="2.872621298570350E-001 2.872621298570350E-001 2.872621298570350E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.45 XYZ="2.651650429449554E-001 2.651650429449554E-001 2.651650429449554E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.46 XYZ="2.430679560328757E-001 2.430679560328757E-001 2.430679560328757E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.47 XYZ="2.209708691207961E-001 2.209708691207961E-001 2.209708691207961E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.48 XYZ="1.988737822087165E-001 1.988737822087165E-001 1.988737822087165E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.49 XYZ="1.767766952966369E-001 1.767766952966369E-001 1.767766952966369E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.50 XYZ="1.546796083845573E-001 1.546796083845573E-001 1.546796083845573E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.51 XYZ="1.325825214724777E-001 1.325825214724777E-001 1.325825214724777E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.52 XYZ="1.104854345603981E-001 1.104854345603981E-001 1.104854345603981E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.53 XYZ="8.838834764831845E-002 8.838834764831845E-002 8.838834764831845E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.54 XYZ="6.629126073623884E-002 6.629126073623884E-002 6.629126073623884E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.55 XYZ="4.419417382415922E-002 4.419417382415922E-002 4.419417382415922E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.56 XYZ="2.209708691207961E-002 2.209708691207961E-002 2.209708691207961E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.57 XYZ="0.000000000000000E+000 0.000000000000000E+000 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.58 XYZ="2.525381361380830E-002 2.525381361380830E-002 -7.070732888081466E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.59 XYZ="5.050762722760953E-002 5.050762722760953E-002 7.077671781985373E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.60 XYZ="7.576144084141782E-002 7.576144084141782E-002 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.61 XYZ="1.010152544552191E-001 1.010152544552191E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.62 XYZ="1.262690680690274E-001 1.262690680690274E-001 -7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.63 XYZ="1.515228816828286E-001 1.515228816828286E-001 7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.64 XYZ="1.767766952966369E-001 1.767766952966369E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.65 XYZ="2.020305089104452E-001 2.020305089104452E-001 -7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.66 XYZ="2.272843225242464E-001 2.272843225242464E-001 7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.67 XYZ="2.525381361380547E-001 2.525381361380547E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.68 XYZ="2.777919497518559E-001 2.777919497518559E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.69 XYZ="3.030457633656642E-001 3.030457633656642E-001 -7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.70 XYZ="3.282995769794655E-001 3.282995769794655E-001 7.105427357601002E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.71 XYZ="3.535533905932738E-001 3.535533905932738E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.72 XYZ="3.788072042070821E-001 3.788072042070821E-001 -7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.73 XYZ="4.040610178208833E-001 4.040610178208833E-001 7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.74 XYZ="4.293148314346916E-001 4.293148314346916E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.75 XYZ="4.545686450484929E-001 4.545686450484929E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.76 XYZ="4.798224586623012E-001 4.798224586623012E-001 -7.049916206369744E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.77 XYZ="5.050762722761024E-001 5.050762722761024E-001 6.994405055138486E-015" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.78 XYZ="5.303300858899107E-001 5.303300858899107E-001 0.000000000000000E+000" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.79 XYZ="5.155986946151933E-001 5.155986946151933E-001 2.946278254944190E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.80 XYZ="5.008673033404689E-001 5.008673033404689E-001 5.892556509887648E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.81 XYZ="4.861359120657515E-001 4.861359120657515E-001 8.838834764831849E-002" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.82 XYZ="4.714045207910341E-001 4.714045207910341E-001 1.178511301977603E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.83 XYZ="4.566731295163097E-001 4.566731295163097E-001 1.473139127471950E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.84 XYZ="4.419417382415922E-001 4.419417382415922E-001 1.767766952966369E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.85 XYZ="4.272103469668748E-001 4.272103469668748E-001 2.062394778460788E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.86 XYZ="4.124789556921504E-001 4.124789556921504E-001 2.357022603955135E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.87 XYZ="3.977475644174330E-001 3.977475644174330E-001 2.651650429449553E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.88 XYZ="3.830161731427156E-001 3.830161731427156E-001 2.946278254943972E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.89 XYZ="3.682847818679912E-001 3.682847818679912E-001 3.240906080438319E-001" WEIGHT="2.222222222222222E-002"/>
+    <K-POINT.90 XYZ="3.535533905932738E-001 3.535533905932738E-001 3.535533905932738E-001" WEIGHT="2.222222222222222E-002"/>
+    <STARTING_K-POINTS type="integer" size="1">
+        90
+    </STARTING_K-POINTS>
+    <K-POINT_START.1 XYZ="0.000000000000000E+000 0.000000000000000E+000 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.2 XYZ="0.000000000000000E+000 3.928371006592245E-002 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.3 XYZ="0.000000000000000E+000 7.856742013184491E-002 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.4 XYZ="0.000000000000000E+000 1.178511301977532E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.5 XYZ="0.000000000000000E+000 1.571348402636757E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.6 XYZ="0.000000000000000E+000 1.964185503295981E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.7 XYZ="0.000000000000000E+000 2.357022603955206E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.8 XYZ="0.000000000000000E+000 2.749859704614289E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.9 XYZ="0.000000000000000E+000 3.142696805273513E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.10 XYZ="0.000000000000000E+000 3.535533905932738E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.11 XYZ="0.000000000000000E+000 3.928371006591962E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.12 XYZ="0.000000000000000E+000 4.321208107251187E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.13 XYZ="0.000000000000000E+000 4.714045207910270E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.14 XYZ="0.000000000000000E+000 5.106882308569495E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.15 XYZ="0.000000000000000E+000 5.499719409228719E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.16 XYZ="0.000000000000000E+000 5.892556509887944E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.17 XYZ="0.000000000000000E+000 6.285393610547026E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.18 XYZ="0.000000000000000E+000 6.678230711206251E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.19 XYZ="0.000000000000000E+000 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.20 XYZ="3.928371006592246E-002 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.21 XYZ="7.856742013184492E-002 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.22 XYZ="1.178511301977532E-001 7.071067811865477E-001 -5.551115123125783E-017" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.23 XYZ="1.571348402636757E-001 7.071067811865477E-001 -5.551115123125783E-017" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.24 XYZ="1.964185503295981E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.25 XYZ="2.357022603955206E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.26 XYZ="2.749859704614288E-001 7.071067811865476E-001 5.551115123125783E-017" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.27 XYZ="3.142696805273514E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.28 XYZ="3.535533905932738E-001 7.071067811865476E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.29 XYZ="3.535533905932738E-001 6.799103665255255E-001 2.719641466102207E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.30 XYZ="3.535533905932737E-001 6.527139518645033E-001 5.439282932204426E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.31 XYZ="3.535533905932737E-001 6.255175372034811E-001 8.158924398306644E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.32 XYZ="3.535533905932738E-001 5.983211225424589E-001 1.087856586440886E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.33 XYZ="3.535533905932737E-001 5.711247078814369E-001 1.359820733051108E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.34 XYZ="3.535533905932738E-001 5.439282932204147E-001 1.631784879661329E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.35 XYZ="3.535533905932738E-001 5.167318785594066E-001 1.903749026271409E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.36 XYZ="3.535533905932738E-001 4.895354638983845E-001 2.175713172881630E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.37 XYZ="3.535533905932738E-001 4.623390492373623E-001 2.447677319491853E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.38 XYZ="3.535533905932738E-001 4.351426345763403E-001 2.719641466102072E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.39 XYZ="3.535533905932738E-001 4.079462199153180E-001 2.991605612712296E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.40 XYZ="3.535533905932738E-001 3.807498052542960E-001 3.263569759322516E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.41 XYZ="3.535533905932738E-001 3.535533905932738E-001 3.535533905932738E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.42 XYZ="3.314563036811942E-001 3.314563036811942E-001 3.314563036811942E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.43 XYZ="3.093592167691145E-001 3.093592167691145E-001 3.093592167691145E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.44 XYZ="2.872621298570350E-001 2.872621298570350E-001 2.872621298570350E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.45 XYZ="2.651650429449554E-001 2.651650429449554E-001 2.651650429449554E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.46 XYZ="2.430679560328757E-001 2.430679560328757E-001 2.430679560328757E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.47 XYZ="2.209708691207961E-001 2.209708691207961E-001 2.209708691207961E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.48 XYZ="1.988737822087165E-001 1.988737822087165E-001 1.988737822087165E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.49 XYZ="1.767766952966369E-001 1.767766952966369E-001 1.767766952966369E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.50 XYZ="1.546796083845573E-001 1.546796083845573E-001 1.546796083845573E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.51 XYZ="1.325825214724777E-001 1.325825214724777E-001 1.325825214724777E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.52 XYZ="1.104854345603981E-001 1.104854345603981E-001 1.104854345603981E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.53 XYZ="8.838834764831845E-002 8.838834764831845E-002 8.838834764831845E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.54 XYZ="6.629126073623884E-002 6.629126073623884E-002 6.629126073623884E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.55 XYZ="4.419417382415922E-002 4.419417382415922E-002 4.419417382415922E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.56 XYZ="2.209708691207961E-002 2.209708691207961E-002 2.209708691207961E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.57 XYZ="0.000000000000000E+000 0.000000000000000E+000 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.58 XYZ="2.525381361380830E-002 2.525381361380830E-002 -7.070732888081466E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.59 XYZ="5.050762722760953E-002 5.050762722760953E-002 7.077671781985373E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.60 XYZ="7.576144084141782E-002 7.576144084141782E-002 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.61 XYZ="1.010152544552191E-001 1.010152544552191E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.62 XYZ="1.262690680690274E-001 1.262690680690274E-001 -7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.63 XYZ="1.515228816828286E-001 1.515228816828286E-001 7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.64 XYZ="1.767766952966369E-001 1.767766952966369E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.65 XYZ="2.020305089104452E-001 2.020305089104452E-001 -7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.66 XYZ="2.272843225242464E-001 2.272843225242464E-001 7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.67 XYZ="2.525381361380547E-001 2.525381361380547E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.68 XYZ="2.777919497518559E-001 2.777919497518559E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.69 XYZ="3.030457633656642E-001 3.030457633656642E-001 -7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.70 XYZ="3.282995769794655E-001 3.282995769794655E-001 7.105427357601002E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.71 XYZ="3.535533905932738E-001 3.535533905932738E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.72 XYZ="3.788072042070821E-001 3.788072042070821E-001 -7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.73 XYZ="4.040610178208833E-001 4.040610178208833E-001 7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.74 XYZ="4.293148314346916E-001 4.293148314346916E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.75 XYZ="4.545686450484929E-001 4.545686450484929E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.76 XYZ="4.798224586623012E-001 4.798224586623012E-001 -7.049916206369744E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.77 XYZ="5.050762722761024E-001 5.050762722761024E-001 6.994405055138486E-015" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.78 XYZ="5.303300858899107E-001 5.303300858899107E-001 0.000000000000000E+000" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.79 XYZ="5.155986946151933E-001 5.155986946151933E-001 2.946278254944190E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.80 XYZ="5.008673033404689E-001 5.008673033404689E-001 5.892556509887648E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.81 XYZ="4.861359120657515E-001 4.861359120657515E-001 8.838834764831849E-002" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.82 XYZ="4.714045207910341E-001 4.714045207910341E-001 1.178511301977603E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.83 XYZ="4.566731295163097E-001 4.566731295163097E-001 1.473139127471950E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.84 XYZ="4.419417382415922E-001 4.419417382415922E-001 1.767766952966369E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.85 XYZ="4.272103469668748E-001 4.272103469668748E-001 2.062394778460788E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.86 XYZ="4.124789556921504E-001 4.124789556921504E-001 2.357022603955135E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.87 XYZ="3.977475644174330E-001 3.977475644174330E-001 2.651650429449553E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.88 XYZ="3.830161731427156E-001 3.830161731427156E-001 2.946278254943972E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.89 XYZ="3.682847818679912E-001 3.682847818679912E-001 3.240906080438319E-001" WEIGHT="1.000000000000000E+000"/>
+    <K-POINT_START.90 XYZ="3.535533905932738E-001 3.535533905932738E-001 3.535533905932738E-001" WEIGHT="1.000000000000000E+000"/>
+    <NORM-OF-Q type="real" size="1">
+ 0.000000000000000E+000
+    </NORM-OF-Q>
+  </BRILLOUIN_ZONE>
+  <PARALLELISM>
+    <GRANULARITY_OF_K-POINTS_DISTRIBUTION type="integer" size="1">
+         1
+    </GRANULARITY_OF_K-POINTS_DISTRIBUTION>
+    <NUMBER_OF_PROCESSORS type="integer" size="1">
+        16
+    </NUMBER_OF_PROCESSORS>
+    <NUMBER_OF_PROCESSORS_PER_POOL type="integer" size="1">
+        16
+    </NUMBER_OF_PROCESSORS_PER_POOL>
+    <NUMBER_OF_PROCESSORS_PER_IMAGE type="integer" size="1">
+        16
+    </NUMBER_OF_PROCESSORS_PER_IMAGE>
+    <NUMBER_OF_PROCESSORS_PER_TASKGROUP type="integer" size="1">
+         1
+    </NUMBER_OF_PROCESSORS_PER_TASKGROUP>
+    <NUMBER_OF_PROCESSORS_PER_BAND_GROUP type="integer" size="1">
+        16
+    </NUMBER_OF_PROCESSORS_PER_BAND_GROUP>
+    <NUMBER_OF_PROCESSORS_PER_DIAGONALIZATION type="integer" size="1">
+         1
+    </NUMBER_OF_PROCESSORS_PER_DIAGONALIZATION>
+  </PARALLELISM>
+  <CHARGE-DENSITY iotk_link="./charge-density.dat">
+    <!--This is a link to the file indicated in the iotk_link attribute-->
+  </CHARGE-DENSITY>
+  <BAND_STRUCTURE_INFO>
+    <NUMBER_OF_K-POINTS type="integer" size="1">
+        90
+    </NUMBER_OF_K-POINTS>
+    <NUMBER_OF_SPIN_COMPONENTS type="integer" size="1">
+         1
+    </NUMBER_OF_SPIN_COMPONENTS>
+    <NON-COLINEAR_CALCULATION type="logical" size="1">
+F
+    </NON-COLINEAR_CALCULATION>
+    <NUMBER_OF_ATOMIC_WFC type="integer" size="1">
+         0
+    </NUMBER_OF_ATOMIC_WFC>
+    <NUMBER_OF_BANDS type="integer" size="1">
+        18
+    </NUMBER_OF_BANDS>
+    <NUMBER_OF_ELECTRONS type="real" size="1">
+ 2.800000000000000E+001
+    </NUMBER_OF_ELECTRONS>
+    <UNITS_FOR_K-POINTS UNITS="2 pi / a"/>
+    <UNITS_FOR_ENERGIES UNITS="Hartree"/>
+    <FERMI_ENERGY type="real" size="1">
+ 3.082639257517082E-001
+    </FERMI_ENERGY>
+  </BAND_STRUCTURE_INFO>
+  <EIGENVALUES>
+    <K-POINT.1>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.1>
+    <K-POINT.2>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  3.928371006592245E-002  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.2>
+    <K-POINT.3>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  7.856742013184491E-002  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.3>
+    <K-POINT.4>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  1.178511301977532E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.4>
+    <K-POINT.5>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  1.571348402636757E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.5>
+    <K-POINT.6>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  1.964185503295981E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.6>
+    <K-POINT.7>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  2.357022603955206E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.7>
+    <K-POINT.8>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  2.749859704614289E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.8>
+    <K-POINT.9>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  3.142696805273513E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.9>
+    <K-POINT.10>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  3.535533905932738E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.10>
+    <K-POINT.11>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  3.928371006591962E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.11>
+    <K-POINT.12>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  4.321208107251187E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.12>
+    <K-POINT.13>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  4.714045207910270E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.13>
+    <K-POINT.14>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  5.106882308569495E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.14>
+    <K-POINT.15>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  5.499719409228719E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.15>
+    <K-POINT.16>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  5.892556509887944E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.16>
+    <K-POINT.17>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  6.285393610547026E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.17>
+    <K-POINT.18>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  6.678230711206251E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.18>
+    <K-POINT.19>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.19>
+    <K-POINT.20>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.928371006592246E-002  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.20>
+    <K-POINT.21>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 7.856742013184492E-002  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.21>
+    <K-POINT.22>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.178511301977532E-001  7.071067811865477E-001 -5.551115123125783E-017
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.22>
+    <K-POINT.23>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.571348402636757E-001  7.071067811865477E-001 -5.551115123125783E-017
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.23>
+    <K-POINT.24>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.964185503295981E-001  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.24>
+    <K-POINT.25>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.357022603955206E-001  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.25>
+    <K-POINT.26>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.749859704614288E-001  7.071067811865476E-001  5.551115123125783E-017
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.26>
+    <K-POINT.27>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.142696805273514E-001  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.27>
+    <K-POINT.28>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  7.071067811865476E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.28>
+    <K-POINT.29>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  6.799103665255255E-001  2.719641466102207E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.29>
+    <K-POINT.30>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932737E-001  6.527139518645033E-001  5.439282932204426E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.30>
+    <K-POINT.31>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932737E-001  6.255175372034811E-001  8.158924398306644E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.31>
+    <K-POINT.32>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  5.983211225424589E-001  1.087856586440886E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.32>
+    <K-POINT.33>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932737E-001  5.711247078814369E-001  1.359820733051108E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.33>
+    <K-POINT.34>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  5.439282932204147E-001  1.631784879661329E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.34>
+    <K-POINT.35>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  5.167318785594066E-001  1.903749026271409E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.35>
+    <K-POINT.36>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  4.895354638983845E-001  2.175713172881630E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.36>
+    <K-POINT.37>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  4.623390492373623E-001  2.447677319491853E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.37>
+    <K-POINT.38>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  4.351426345763403E-001  2.719641466102072E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.38>
+    <K-POINT.39>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  4.079462199153180E-001  2.991605612712296E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.39>
+    <K-POINT.40>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  3.807498052542960E-001  3.263569759322516E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.40>
+    <K-POINT.41>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  3.535533905932738E-001  3.535533905932738E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.41>
+    <K-POINT.42>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.314563036811942E-001  3.314563036811942E-001  3.314563036811942E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.42>
+    <K-POINT.43>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.093592167691145E-001  3.093592167691145E-001  3.093592167691145E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.43>
+    <K-POINT.44>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.872621298570350E-001  2.872621298570350E-001  2.872621298570350E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.44>
+    <K-POINT.45>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.651650429449554E-001  2.651650429449554E-001  2.651650429449554E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.45>
+    <K-POINT.46>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.430679560328757E-001  2.430679560328757E-001  2.430679560328757E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.46>
+    <K-POINT.47>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.209708691207961E-001  2.209708691207961E-001  2.209708691207961E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.47>
+    <K-POINT.48>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.988737822087165E-001  1.988737822087165E-001  1.988737822087165E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.48>
+    <K-POINT.49>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.767766952966369E-001  1.767766952966369E-001  1.767766952966369E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.49>
+    <K-POINT.50>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.546796083845573E-001  1.546796083845573E-001  1.546796083845573E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.50>
+    <K-POINT.51>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.325825214724777E-001  1.325825214724777E-001  1.325825214724777E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.51>
+    <K-POINT.52>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.104854345603981E-001  1.104854345603981E-001  1.104854345603981E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.52>
+    <K-POINT.53>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 8.838834764831845E-002  8.838834764831845E-002  8.838834764831845E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.53>
+    <K-POINT.54>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 6.629126073623884E-002  6.629126073623884E-002  6.629126073623884E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.54>
+    <K-POINT.55>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.419417382415922E-002  4.419417382415922E-002  4.419417382415922E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.55>
+    <K-POINT.56>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.209708691207961E-002  2.209708691207961E-002  2.209708691207961E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.56>
+    <K-POINT.57>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.57>
+    <K-POINT.58>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.525381361380830E-002  2.525381361380830E-002 -7.070732888081466E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.58>
+    <K-POINT.59>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 5.050762722760953E-002  5.050762722760953E-002  7.077671781985373E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.59>
+    <K-POINT.60>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 7.576144084141782E-002  7.576144084141782E-002  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.60>
+    <K-POINT.61>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.010152544552191E-001  1.010152544552191E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.61>
+    <K-POINT.62>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.262690680690274E-001  1.262690680690274E-001 -7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.62>
+    <K-POINT.63>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.515228816828286E-001  1.515228816828286E-001  7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.63>
+    <K-POINT.64>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 1.767766952966369E-001  1.767766952966369E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.64>
+    <K-POINT.65>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.020305089104452E-001  2.020305089104452E-001 -7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.65>
+    <K-POINT.66>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.272843225242464E-001  2.272843225242464E-001  7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.66>
+    <K-POINT.67>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.525381361380547E-001  2.525381361380547E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.67>
+    <K-POINT.68>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 2.777919497518559E-001  2.777919497518559E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.68>
+    <K-POINT.69>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.030457633656642E-001  3.030457633656642E-001 -7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.69>
+    <K-POINT.70>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.282995769794655E-001  3.282995769794655E-001  7.105427357601002E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.70>
+    <K-POINT.71>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  3.535533905932738E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.71>
+    <K-POINT.72>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.788072042070821E-001  3.788072042070821E-001 -7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.72>
+    <K-POINT.73>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.040610178208833E-001  4.040610178208833E-001  7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.73>
+    <K-POINT.74>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.293148314346916E-001  4.293148314346916E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.74>
+    <K-POINT.75>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.545686450484929E-001  4.545686450484929E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.75>
+    <K-POINT.76>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.798224586623012E-001  4.798224586623012E-001 -7.049916206369744E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.76>
+    <K-POINT.77>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 5.050762722761024E-001  5.050762722761024E-001  6.994405055138486E-015
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.77>
+    <K-POINT.78>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 5.303300858899107E-001  5.303300858899107E-001  0.000000000000000E+000
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.78>
+    <K-POINT.79>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 5.155986946151933E-001  5.155986946151933E-001  2.946278254944190E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.79>
+    <K-POINT.80>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 5.008673033404689E-001  5.008673033404689E-001  5.892556509887648E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.80>
+    <K-POINT.81>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.861359120657515E-001  4.861359120657515E-001  8.838834764831849E-002
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.81>
+    <K-POINT.82>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.714045207910341E-001  4.714045207910341E-001  1.178511301977603E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.82>
+    <K-POINT.83>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.566731295163097E-001  4.566731295163097E-001  1.473139127471950E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.83>
+    <K-POINT.84>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.419417382415922E-001  4.419417382415922E-001  1.767766952966369E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.84>
+    <K-POINT.85>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.272103469668748E-001  4.272103469668748E-001  2.062394778460788E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.85>
+    <K-POINT.86>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 4.124789556921504E-001  4.124789556921504E-001  2.357022603955135E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.86>
+    <K-POINT.87>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.977475644174330E-001  3.977475644174330E-001  2.651650429449553E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.87>
+    <K-POINT.88>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.830161731427156E-001  3.830161731427156E-001  2.946278254943972E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.88>
+    <K-POINT.89>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.682847818679912E-001  3.682847818679912E-001  3.240906080438319E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.89>
+    <K-POINT.90>
+      <K-POINT_COORDS type="real" size="3" columns="3">
+ 3.535533905932738E-001  3.535533905932738E-001  3.535533905932738E-001
+      </K-POINT_COORDS>
+      <WEIGHT type="real" size="1">
+ 2.222222222222222E-002
+      </WEIGHT>
+    </K-POINT.90>
+  </EIGENVALUES>
+  <EIGENVECTORS>
+    <MAX_NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6026
+    </MAX_NUMBER_OF_GK-VECTORS>
+    <K-POINT.1>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5985
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.1>
+    <K-POINT.2>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5977
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.2>
+    <K-POINT.3>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5990
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.3>
+    <K-POINT.4>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6014
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.4>
+    <K-POINT.5>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6010
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.5>
+    <K-POINT.6>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6022
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.6>
+    <K-POINT.7>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6022
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.7>
+    <K-POINT.8>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6018
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.8>
+    <K-POINT.9>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6014
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.9>
+    <K-POINT.10>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5982
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.10>
+    <K-POINT.11>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5998
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.11>
+    <K-POINT.12>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6014
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.12>
+    <K-POINT.13>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6014
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.13>
+    <K-POINT.14>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6006
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.14>
+    <K-POINT.15>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6002
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.15>
+    <K-POINT.16>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5994
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.16>
+    <K-POINT.17>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5986
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.17>
+    <K-POINT.18>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5978
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.18>
+    <K-POINT.19>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5962
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.19>
+    <K-POINT.20>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5990
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.20>
+    <K-POINT.21>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5994
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.21>
+    <K-POINT.22>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5986
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.22>
+    <K-POINT.23>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5988
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.23>
+    <K-POINT.24>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5998
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.24>
+    <K-POINT.25>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6004
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.25>
+    <K-POINT.26>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5998
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.26>
+    <K-POINT.27>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5996
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.27>
+    <K-POINT.28>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6008
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.28>
+    <K-POINT.29>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5994
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.29>
+    <K-POINT.30>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5990
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.30>
+    <K-POINT.31>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5994
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.31>
+    <K-POINT.32>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5998
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.32>
+    <K-POINT.33>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5988
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.33>
+    <K-POINT.34>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5978
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.34>
+    <K-POINT.35>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5988
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.35>
+    <K-POINT.36>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5992
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.36>
+    <K-POINT.37>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6014
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.37>
+    <K-POINT.38>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6022
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.38>
+    <K-POINT.39>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6014
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.39>
+    <K-POINT.40>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6010
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.40>
+    <K-POINT.41>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5996
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.41>
+    <K-POINT.42>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6026
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.42>
+    <K-POINT.43>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6023
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.43>
+    <K-POINT.44>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6017
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.44>
+    <K-POINT.45>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6026
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.45>
+    <K-POINT.46>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6020
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.46>
+    <K-POINT.47>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6015
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.47>
+    <K-POINT.48>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6009
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.48>
+    <K-POINT.49>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6018
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.49>
+    <K-POINT.50>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6018
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.50>
+    <K-POINT.51>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6012
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.51>
+    <K-POINT.52>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5997
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.52>
+    <K-POINT.53>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6000
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.53>
+    <K-POINT.54>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6003
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.54>
+    <K-POINT.55>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5985
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.55>
+    <K-POINT.56>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5973
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.56>
+    <K-POINT.57>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5985
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.57>
+    <K-POINT.58>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5973
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.58>
+    <K-POINT.59>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5991
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.59>
+    <K-POINT.60>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6017
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.60>
+    <K-POINT.61>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6015
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.61>
+    <K-POINT.62>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6003
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.62>
+    <K-POINT.63>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5997
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.63>
+    <K-POINT.64>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6015
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.64>
+    <K-POINT.65>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6007
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.65>
+    <K-POINT.66>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6001
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.66>
+    <K-POINT.67>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6009
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.67>
+    <K-POINT.68>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6021
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.68>
+    <K-POINT.69>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6013
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.69>
+    <K-POINT.70>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6007
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.70>
+    <K-POINT.71>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5995
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.71>
+    <K-POINT.72>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5989
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.72>
+    <K-POINT.73>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5993
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.73>
+    <K-POINT.74>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5983
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.74>
+    <K-POINT.75>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5967
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.75>
+    <K-POINT.76>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5960
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.76>
+    <K-POINT.77>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5988
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.77>
+    <K-POINT.78>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5990
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.78>
+    <K-POINT.79>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5978
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.79>
+    <K-POINT.80>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5985
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.80>
+    <K-POINT.81>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5981
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.81>
+    <K-POINT.82>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5981
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.82>
+    <K-POINT.83>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5989
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.83>
+    <K-POINT.84>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5983
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.84>
+    <K-POINT.85>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5998
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.85>
+    <K-POINT.86>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6009
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.86>
+    <K-POINT.87>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6011
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.87>
+    <K-POINT.88>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6012
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.88>
+    <K-POINT.89>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      6009
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.89>
+    <K-POINT.90>
+      <NUMBER_OF_GK-VECTORS type="integer" size="1">
+      5996
+      </NUMBER_OF_GK-VECTORS>
+    </K-POINT.90>
+  </EIGENVECTORS>
+</Root>
+ 

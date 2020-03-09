@@ -1,5 +1,5 @@
 
-     Program PWSCF v.5.4.0 starts on 27Feb2020 at 22:48:46 
+     Program PWSCF v.5.4.0 starts on  1Mar2020 at 12:48:57 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -2157,7 +2157,7 @@ Warning: card / ignored
      starting charge   27.82601, renormalised to   28.00000
      Starting wfc are random
 
-     total cpu time spent up to now is       10.6 secs
+     total cpu time spent up to now is       17.6 secs
 
      Self-consistent Calculation
 
@@ -2165,7 +2165,7 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  1.00E-02,  avg # of iterations =  7.0
 
-     total cpu time spent up to now is       95.8 secs
+     total cpu time spent up to now is      166.7 secs
 
      total energy              =    -233.14047938 Ry
      Harris-Foulkes estimate   =    -234.57572860 Ry
@@ -2175,7 +2175,7 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  8.18E-03,  avg # of iterations =  2.0
 
-     total cpu time spent up to now is      126.7 secs
+     total cpu time spent up to now is      225.4 secs
 
      total energy              =    -233.44516173 Ry
      Harris-Foulkes estimate   =    -233.46924210 Ry
@@ -2185,7 +2185,7 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  2.22E-04,  avg # of iterations =  2.2
 
-     total cpu time spent up to now is      154.9 secs
+     total cpu time spent up to now is      278.7 secs
 
      total energy              =    -233.44806786 Ry
      Harris-Foulkes estimate   =    -233.44891633 Ry
@@ -2195,7 +2195,7 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  1.01E-05,  avg # of iterations =  2.0
 
-     total cpu time spent up to now is      181.5 secs
+     total cpu time spent up to now is      325.6 secs
 
      total energy              =    -233.44821817 Ry
      Harris-Foulkes estimate   =    -233.44821606 Ry
@@ -2205,7 +2205,7 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  1.05E-07,  avg # of iterations =  2.4
 
-     total cpu time spent up to now is      210.6 secs
+     total cpu time spent up to now is      370.2 secs
 
      End of self-consistent calculation
 
@@ -10499,53 +10499,53 @@ Warning: card / ignored
 
      Writing output data file Sn.save
  
-     init_run     :      9.37s CPU     10.48s WALL (       1 calls)
-     electrons    :    189.96s CPU    200.09s WALL (       1 calls)
+     init_run     :     15.90s CPU     17.37s WALL (       1 calls)
+     electrons    :    339.19s CPU    352.74s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :      9.14s CPU     10.15s WALL (       1 calls)
-     potinit      :      0.01s CPU      0.02s WALL (       1 calls)
+     wfcinit      :     15.62s CPU     16.98s WALL (       1 calls)
+     potinit      :      0.02s CPU      0.02s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    169.31s CPU    178.94s WALL (       5 calls)
-     sum_band     :     20.57s CPU     20.99s WALL (       5 calls)
-     v_of_rho     :      0.05s CPU      0.06s WALL (       6 calls)
-     v_h          :      0.00s CPU      0.00s WALL (       6 calls)
-     v_xc         :      0.05s CPU      0.06s WALL (       6 calls)
+     c_bands      :    303.73s CPU    316.05s WALL (       5 calls)
+     sum_band     :     35.33s CPU     36.46s WALL (       5 calls)
+     v_of_rho     :      0.09s CPU      0.10s WALL (       6 calls)
+     v_h          :      0.01s CPU      0.01s WALL (       6 calls)
+     v_xc         :      0.08s CPU      0.09s WALL (       6 calls)
      mix_rho      :      0.01s CPU      0.01s WALL (       5 calls)
 
      Called by c_bands:
-     init_us_2    :      1.34s CPU      1.49s WALL (    8272 calls)
-     cegterg      :    162.07s CPU    171.17s WALL (    3760 calls)
+     init_us_2    :      2.16s CPU      2.45s WALL (    8272 calls)
+     cegterg      :    291.80s CPU    303.47s WALL (    3760 calls)
 
      Called by sum_band:
 
      Called by *egterg:
-     h_psi        :    140.65s CPU    149.75s WALL (   16251 calls)
-     g_psi        :      0.60s CPU      0.60s WALL (   11739 calls)
-     cdiaghg      :     11.72s CPU     11.82s WALL (   15499 calls)
-     cegterg:over :      7.11s CPU      7.24s WALL (   11739 calls)
-     cegterg:upda :      2.91s CPU      2.95s WALL (   11739 calls)
-     cegterg:last :      1.71s CPU      1.73s WALL (    4768 calls)
+     h_psi        :    250.52s CPU    261.99s WALL (   16251 calls)
+     g_psi        :      0.63s CPU      0.64s WALL (   11739 calls)
+     cdiaghg      :     15.51s CPU     15.61s WALL (   15499 calls)
+     cegterg:over :     18.59s CPU     18.73s WALL (   11739 calls)
+     cegterg:upda :      5.37s CPU      5.41s WALL (   11739 calls)
+     cegterg:last :      3.02s CPU      3.04s WALL (    4768 calls)
 
      Called by h_psi:
-     h_psi:vloc   :    132.29s CPU    141.00s WALL (   16251 calls)
-     h_psi:vnl    :      7.89s CPU      8.23s WALL (   16251 calls)
-     add_vuspsi   :      2.53s CPU      2.63s WALL (   16251 calls)
+     h_psi:vloc   :    233.78s CPU    244.85s WALL (   16251 calls)
+     h_psi:vnl    :     16.16s CPU     16.51s WALL (   16251 calls)
+     add_vuspsi   :      4.58s CPU      4.66s WALL (   16251 calls)
 
      General routines
-     calbec       :      5.26s CPU      5.53s WALL (   16251 calls)
-     fft          :      0.03s CPU      0.04s WALL (      65 calls)
-     fftw         :    140.61s CPU    148.99s WALL (  536264 calls)
-     davcio       :      0.06s CPU      0.56s WALL (     752 calls)
+     calbec       :     11.44s CPU     11.75s WALL (   16251 calls)
+     fft          :      0.07s CPU      0.08s WALL (      65 calls)
+     fftw         :    249.96s CPU    261.27s WALL (  536264 calls)
+     davcio       :      0.05s CPU      0.77s WALL (     752 calls)
  
      Parallel routines
-     fft_scatter  :     75.66s CPU     80.12s WALL (  536329 calls)
+     fft_scatter  :    147.21s CPU    153.67s WALL (  536329 calls)
  
-     PWSCF        :  3m20.09s CPU     3m32.03s WALL
+     PWSCF        :  5m57.01s CPU     6m13.10s WALL
 
  
-   This run was terminated on:  22:52:18  27Feb2020            
+   This run was terminated on:  12:55:10   1Mar2020            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
