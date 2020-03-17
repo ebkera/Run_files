@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dos2unix *.job
+. QE_PBE_FR_NLCC_2.scf.job
+. QE_PBE_FR_NLCC_3.scf.job
+. QE_PBESOL_FR_NLCC_1.scf.job
+. QE_PBE_SR_NLCC_1.scf.job
+. QE_PBE_SR_NLCC_2.scf.job
+. QE_PBE_SR_NLCC_3.scf.job
+. QE_PBESOL_SR_NLCC_1.scf.job
+
