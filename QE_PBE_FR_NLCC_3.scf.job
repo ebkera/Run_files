@@ -55,8 +55,8 @@ done <<'END_TASKLIST'
     # Single quoting the limit string 'EOT' will pass strings without shell variable and execution expansion.
     # Comments and empty line are fine because we explicitly skip them.
 
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=75^K=16^R=300^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=80^K=16^R=320^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=85^K=16^R=340^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=90^K=16^R=360^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
+    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=110^K=16^R=440^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
+    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=115^K=16^R=460^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
+    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=120^K=16^R=480^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
+    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=125^K=16^R=500^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
 END_TASKLIST

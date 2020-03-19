@@ -1,0 +1,48 @@
+&CONTROL
+   calculation      = 'scf'
+   title            = 'Sn'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   outdir           = './'
+   prefix           = 'Sn'
+   lkpoint_dir      = .false.
+   etot_conv_thr    = 1e-06
+   forc_conv_thr    = 0.0001
+   disk_io          = 'default'
+   pseudo_dir       = '../PseudopotentialDatabase'
+/
+&SYSTEM
+   ecutwfc          = 100
+   occupations      = 'smearing'
+   degauss          = 0.0001
+   smearing         = 'gaussian'
+   noncolin         = .true.
+   lspinorb         = .true.
+   ntyp             = 1
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+   mixing_beta      = 0.7
+   diagonalization  = 'david'
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Sn 118.71 Sn.rel-pbe-dn-rrkjus_psl.1.0.0.UPF
+
+K_POINTS automatic
+16 16 16  0 0 0
+
+CELL_PARAMETERS angstrom
+0.00000000000000 3.33500000000000 3.33500000000000
+3.33500000000000 0.00000000000000 3.33500000000000
+3.33500000000000 3.33500000000000 0.00000000000000
+
+ATOMIC_POSITIONS angstrom
+Sn 0.0000000000 0.0000000000 0.0000000000 
+Sn 1.6675000000 1.6675000000 1.6675000000 
+
