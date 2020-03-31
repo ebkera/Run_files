@@ -1,4 +1,4 @@
-from ebk.runscripthandler import RunScriptHandler, ReadOutfiles
+from ebk.runscripthandler import RunScriptHandler, ReadOutfiles, make_all_job_files
 from ase.atoms import Atoms
 from ase.io import read
 import ase.io
@@ -6,61 +6,64 @@ from ebk.kPathCreator import *
 import json
 
 # All these pseudos have no core correction
-IDs = ["ONCV_PBE_FR1.1", "ONCV_PBE_SR1.0", "ONCV_PBE_SR1.1", "ONCV_PBE_SR1.2"]
+IDs = ["ONCV_PBE_FR1.1", "ONCV_PBE_SR1.0_nbnd40", "ONCV_PBE_SR1.1", "ONCV_PBE_SR1.2"]
+# IDs = ["ONCV_PBE_FR1.1_nbnd40", "ONCV_PBE_SR1.0_nbnd40", "ONCV_PBE_SR1.1_nbnd40", "ONCV_PBE_SR1.2_nbnd40"]
 
-identifier = IDs[0]
+IDs = [IDs[0]]
+for identifier in IDs:
+        if identifier == "ONCV_PBE_FR1.1":
+                pseudopotential = {'Sn': f"Sn_ONCV_PBE_FR-1.1.upf"}
+        elif identifier == "ONCV_PBE_SR1.0" or identifier == "ONCV_PBE_SR1.0_nbnd40":
+                pseudopotential = {'Sn': f"Sn_ONCV_PBE-1.0.upf"}
+        elif identifier == "ONCV_PBE_SR1.1":
+                pseudopotential = {'Sn': f"Sn_ONCV_PBE-1.1.upf"}
+        elif identifier == "ONCV_PBE_SR1.2":
+                pseudopotential = {'Sn': f"Sn_ONCV_PBE-1.2.upf"}
 
-if identifier == "ONCV_PBE_FR1.1":
-        pseudopotential = {'Sn': f"Sn_ONCV_PBE_FR-1.1.upf"}
-elif identifier == "ONCV_PBE_SR1.0":
-        pseudopotential = {'Sn': f"Sn_ONCV_PBE-1.0.upf"}
-elif identifier == "ONCV_PBE_SR1.1":
-        pseudopotential = {'Sn': f"Sn_ONCV_PBE-1.1.upf"}
-elif identifier == "ONCV_PBE_SR1.2":
-        pseudopotential = {'Sn': f"Sn_ONCV_PBE-1.2.upf"}
+        inputs = {"calculation"   : "scf",
+                "lspinorb"        : True,
+                "noncolin"        : True,
+                "occupations"     : 'smearing',
+                "smearing"        : 'gaussian',
+                "degauss"         : 0.0001,
+                "mixing_beta"     : 0.7,
+                "Title"           : 'Sn',
+                "prefix"          : 'Sn',
+                "restart_mode"    : 'from_scratch',
+                "disk_io"         : 'none',
+                "wf_collect"      : False,
+                "verbosity"       : 'high',
+                "lkpoint_dir"     : False,
+                "etot_conv_thr"   : 1.0e-6,
+                "forc_conv_thr"   : 1.0e-4,
+                "outdir"          : './',
+                "structure_type"  : "bulk",
+                "nodes"           : 1,
+                "procs"           : 1,
+                "npool"           : 1,
+                "ntasks"          : 2
+                # "partition"       : "bigmem"
+                }
 
-inputs = {"calculation"   : "bands",
-        "lspinorb"        : True,
-        "noncolin"        : True,
-        "occupations"     : 'smearing',
-        "smearing"        : 'gaussian',
-        "degauss"         : 0.0001,
-        "mixing_beta"     : 0.7,
-        "Title"           : 'Sn',
-        "prefix"          : 'Sn',
-        "restart_mode"    : 'from_scratch',
-        "disk_io"         : 'default',
-        "verbosity"       : 'high',
-        "lkpoint_dir"     : False,
-        "etot_conv_thr"   : 1.0e-6,
-        "forc_conv_thr"   : 1.0e-4,
-        "outdir"          : './',
-        "structure_type"  : "bulk",
-        "nodes"           : 4,
-        "procs"           : 16,
-        "npool"           : 8,
-        "ntasks"          : 64
-        # "partition"       : "bigmem"
-        }
+        Sn = RunScriptHandler(identifier = f"{identifier}", KE_cut = [150], k = [2], a0 = [6.63, 6.64, 6.65, 6.66, 6.67, 6.68], **inputs)
+        # Sn.job_handler = "torque"
+        Sn.job_handler = "era_ubuntu"
+        # Sn.job_handler = "era_pc"
 
-Sn = RunScriptHandler(identifier = f"{identifier}", KE_cut = [150], k = [45], a0 = [5.7], **inputs)
-Sn.job_handler = "torque"
-# Sn.job_handler = "era_ubuntu"
-# Sn.job_handler = "era_pc"
+        Sn.set_pseudopotentials(pseudopotential)
 
-Sn.set_pseudopotentials(pseudopotential)
+        bulk = Atoms('Sn2', [(0, 0, 0), (0.25, 0.25, 0.25)],  pbc=True)
+        Sn.structure = 1
 
-bulk = Atoms('Sn2', [(0, 0, 0), (0.25, 0.25, 0.25)],  pbc=True)
-Sn.structure = 1
+        # Printing out some run specific values
+        print(f"Number of runs: {Sn.get_number_of_calculations()}")
+        print(Sn.pseudopotentials)
 
-# Printing out some run specific values
-print(f"Number of runs: {Sn.get_number_of_calculations()}")
-print(Sn.pseudopotentials)
-
-# times
-Sn.walltime_hours = 2
-Sn.walltime_mins = 30
-Sn.make_runs()
+        # times
+        Sn.walltime_hours = 2
+        Sn.walltime_mins = 30
+        Sn.make_runs()
+        make_all_job_files()
 
 ###############################################################################################################################################################
 

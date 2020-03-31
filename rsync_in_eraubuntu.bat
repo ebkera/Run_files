@@ -1,0 +1,1 @@
+wsl rsync -avtuz --max-size=5m -e ssh era@192.168.0.23:~/Documents/Run_files/ ./

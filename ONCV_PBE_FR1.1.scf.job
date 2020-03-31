@@ -1,6 +1,6 @@
 #!/bin/bash
 # Submit jobs from explicitly specified directories;
-# stern, 2020-02-18 - Edited Eranjan
+# stern, 2020-03-18 - Edited Eranjan
 
 shopt -s extglob	# handle "+()" patterns
 
@@ -24,36 +24,21 @@ do
     # Double-quote $dir to avoid parameter substitution.  (This is not strictly
     # necessary here, though, because the chars '^+' are not special -- in the
     # circumstances used here.)
-    qsub -w "$PWD/$dir" -N "$job_name" <<-END_JOB_SCRIPT
+    cd "$PWD/$dir"
 
     #!/bin/bash
-    #  Basics: Number of nodes, processors per node (ppn), and walltime (hhh:mm:ss)
-    #PBS -l nodes=4:ppn=16
-    #PBS -l walltime=2:30:0
-    #PBS -A cnm66441
-    #  File names for stdout and stderr.  If not set here, the defaults
-    #  are <JOBNAME>.o<JOBNUM> and <JOBNAME>.e<JOBNUM>
-    #PBS -e $PWD/$dir/job.err
-    #PBS -j eo
-    # Send mail at begin, end, abort, or never (b, e, a, n). Default is 'a'.
-    #PBS -m bea
 
-    # change into the directory where qsub will be executed
-    cd \$PBS_O_WORKDIR
-
-    # use a per-job lineup of modules; stern
-    module purge
-    module load intel
-    module load openmpi/1.10/intel-17
-    module load quantum-espresso/5.4/openmpi-1.10
-    module list
-
-    mpirun -np 64 pw.x -npool 8 < ONCV_PBE_FR1.1.in > ONCV_PBE_FR1.1.out
-END_JOB_SCRIPT
+    mpirun -np 2 /home/era/Downloads/qe-6.5/bin/pw.x -npool 1 < ONCV_PBE_FR1.1.in | tee ONCV_PBE_FR1.1.out
+    cd .. 
 
 done <<'END_TASKLIST'
     # Single quoting the limit string 'EOT' will pass strings without shell variable and execution expansion.
     # Comments and empty line are fine because we explicitly skip them.
 
-    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=45^R=600^a=5.7^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=bands
+    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=2^R=600^a=6.63^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf
+    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=2^R=600^a=6.64^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf
+    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=2^R=600^a=6.65^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf
+    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=2^R=600^a=6.66^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf
+    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=2^R=600^a=6.67^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf
+    ONCV_PBE_FR1.1^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=2^R=600^a=6.68^PP=Sn_ONCV_PBE_FR-1.1.upf-^type=scf
 END_TASKLIST

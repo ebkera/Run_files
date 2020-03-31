@@ -28,8 +28,8 @@ do
 
     #!/bin/bash
     #  Basics: Number of nodes, processors per node (ppn), and walltime (hhh:mm:ss)
-    #PBS -l nodes=2:ppn=8
-    #PBS -l walltime=1:30:0
+    #PBS -l nodes=4:ppn=16
+    #PBS -l walltime=2:30:0
     #PBS -A cnm66441
     #  File names for stdout and stderr.  If not set here, the defaults
     #  are <JOBNAME>.o<JOBNUM> and <JOBNAME>.e<JOBNUM>
@@ -48,15 +48,12 @@ do
     module load quantum-espresso/5.4/openmpi-1.10
     module list
 
-    mpirun pw.x < QE_PBE_FR_NLCC_3.in > QE_PBE_FR_NLCC_3.out
+    mpirun -np 64 pw.x -npool 8 < ONCV_PBE_SR1.0_nbnd40.in > ONCV_PBE_SR1.0_nbnd40.out
 END_JOB_SCRIPT
 
 done <<'END_TASKLIST'
     # Single quoting the limit string 'EOT' will pass strings without shell variable and execution expansion.
     # Comments and empty line are fine because we explicitly skip them.
 
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=110^K=16^R=440^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=115^K=16^R=460^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=120^K=16^R=480^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
-    QE_PBE_FR_NLCC_3^Calc=QE^Struct=bulk^Specie=Sn-^KE=125^K=16^R=500^a=6.67^PP=Sn.rel-pbe-dn-kjpaw_psl.0.2.UPF-^type=scf
+    ONCV_PBE_SR1.0_nbnd40^Calc=QE^Struct=bulk^Specie=Sn-^KE=150^K=45^R=600^a=6.655^PP=Sn_ONCV_PBE-1.0.upf-^type=bands
 END_TASKLIST
